@@ -16,14 +16,14 @@ const About = () => {
         <section className={classes.Section} id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 pr-5">
+                    <div class="col-xl-4 col-md-4 pr-5">
                         <h3>About me</h3>
                         <p class="mt-4">I am a full stack developer with 8 years of experience.
                         I have worked in domains like IoT and Set Top Box. I like my code to be structured and love spending time on fixing little details.
                             I have an eye for neat code and constantly work towards code optimization and performance improvements.</p>
                     </div>
-                    <div className={`col-xl-3 px-5 ${classes.Image}`}></div>
-                    <div className="col-xl-3 px-5">
+                    <div className={`col-xl-3 col-md-3 px-5 ${classes.Image}`}></div>
+                    <div className="col-xl-3 col-md-3 px-5">
                         <h2 class="mb-4">Details</h2>
                         {details.map(d => (
                             <div key={d.title} class="mb-3">

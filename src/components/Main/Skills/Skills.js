@@ -16,12 +16,14 @@ const Skills = () => {
     ];
     return (
         <section className="Section" id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="d-flex">
-                    {skills.map(s => (
-                        <div className={classes.SkillChip}>{s.name}</div>
-                    ))}
+            <div className="container">
+                <div className="row">
+                    <h2>Skills</h2>
+                    <div class="d-flex flex-wrap">
+                        {skills.map(s => (
+                            <div className={classes.SkillChip}>{s.name}</div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

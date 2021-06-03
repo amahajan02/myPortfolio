@@ -1,20 +1,24 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { createRef, useEffect, useRef } from 'react';
 import NavItem from '../Navigation/NavigationItems/NavigationItem';
 import classes from './Toolbar.module.scss';
 
 const Toolbar = () => {
     const items = [{
         name: 'Home',
-        path: 'home'
+        path: 'home',
+        active: false
     }, {
         name: 'About',
-        path: 'about'
+        path: 'about',
+        active: false
     }, {
         name: 'Resume',
-        path: 'resume'
+        path: 'resume',
+        active: false
     }, {
         name: 'Contact',
-        path: 'contact'
+        path: 'contact',
+        active: false
     }];
 
     const header = useRef();
@@ -48,7 +52,7 @@ const Toolbar = () => {
                         <a href="#home">Ashima</a>
                     </h1>
                 </div>
-                <nav className={"navbar " + classes.Menu}>
+                <nav className={"navbar " + classes.Menu} id="navbar">
                     <ul>
                         {items.map(i => <NavItem path={i.path} name={i.name} key={i.name} />)}
                     </ul>

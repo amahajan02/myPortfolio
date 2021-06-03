@@ -22,4 +22,14 @@
     transition: all 0.5s;
     height: 60px;
     background: #fff;
+
+    a {
+        color: #2c4964;
+        text-decoration: none;
+
+        &:hover,
+        &.aa {
+            color: #d43076;
+        }
+    }
 }

@@ -29,7 +29,7 @@ const Resume = () => {
                             <p><em>Punjab University, Chandigarh</em></p>
                         </div>
                     </div>
-                    <div className="col-lg-6 pl-5">
+                    <div className="col-lg-6">
                         <h3 className={classes.ResumeTitle}>Professional Experience</h3>
                         <div className={classes.ResumeItem}>
                             <h4>Software Engineer</h4>
