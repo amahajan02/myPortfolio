@@ -1,4 +1,4 @@
-import React, { createRef, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import NavItem from '../Navigation/NavigationItems/NavigationItem';
 import classes from './Toolbar.module.scss';
 
