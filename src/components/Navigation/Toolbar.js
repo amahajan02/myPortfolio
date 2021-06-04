@@ -22,15 +22,15 @@ const Toolbar = () => {
     }];
 
     const header = useRef();
-    let headerOffset = 0;
+    const headerOffsetTop = useRef(null);
 
     useEffect(() => {
-        headerOffset = header.current.offsetTop;
+        headerOffsetTop.current = header.current.offsetTop;
     }, []);
 
     useEffect(() => {
         const handleScroll = () => {
-            if (headerOffset - window.scrollY <= 0) {
+            if (headerOffsetTop.current - window.scrollY <= 0) {
                 header.current.classList.add('fixed-top');
             } else {
                 header.current.classList.remove('fixed-top');
